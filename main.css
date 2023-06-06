@@ -25,7 +25,7 @@ header li{
 
 header li a{
     color: aliceblue;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .container {
@@ -104,5 +104,21 @@ section h2 {
 
 #economy .articles article a{
     background-color: burlywood;
+}
+
+#tech{
+    background-color: aqua;
+}
+
+#tech .articles article a{
+    background-color: darkcyan;
+}
+
+#entertainment{
+    background-color: chartreuse;
+}
+
+#entertainment .articles article a{
+    background-color: green;
 }
 
