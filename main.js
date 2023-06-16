@@ -1,20 +1,24 @@
 const form=document.getElementById("campos");
 
 function validaCampo(campoA){
-    const campoA=campoA.split('');
-    return campoA.length >= campoB;
+    const campoA=campoA;
+    return campoA.length <= campoB;
 }
 
 form.addEventListener("submit", function(e){
     e.preventDefault();
 
     const campoA=document.getElementById("campoA");
-    if (!validaCampo(campoA.value)){
-        alert("Campo A deve ser menor que Campo B")
-    }
+    
+    function validaCampo(campoB){
+        const campoB=campoB;
+        return campoB.length >= campoA;
 
-})
-
-console.log(form);
+        function validaCampo(campoA<campoB){
+            alert("Correto");
+        }
+        function validaCampo(campoA>campoB){
+            alert("Incorreto");
+        }
 
 
