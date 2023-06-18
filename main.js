@@ -2,23 +2,22 @@ const form=document.getElementById("campos");
 
 function validaCampo(campoA){
     const campoA=campoA;
-    return campoA.length <= campoB;
+    if (campoA.length <= campoB) {
+        alert("O Valor do Campo B é inferior ao do Campo A");
+    } else {
+        alert("O Valor do Campo B é maior que o do Campo A");
+    }
 }
+
 
 form.addEventListener("submit", function(e){
     e.preventDefault();
 
     const campoA=document.getElementById("campoA");
     
-    function validaCampo(campoB){
-        const campoB=campoB;
-        return campoB.length >= campoA;
+    const campoA = document.getElementById("campoA").value;
 
-        function validaCampo(campoA<campoB){
-            alert("Correto");
-        }
-        function validaCampo(campoA>campoB){
-            alert("Incorreto");
-        }
+    const campoB = document.getElementById("campoB").value;
 
+    validaCampo(campoA, campoB);
 
